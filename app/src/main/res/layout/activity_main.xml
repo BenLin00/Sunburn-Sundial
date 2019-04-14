@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="680dp"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="43dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/select_skin_type"
+        android:textSize="24sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/skin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#EFD1B6"
+            android:onClick="selectSkin"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/skin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#E6B48F"
+            android:onClick="selectSkin"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/skin3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#D19E7C"
+            android:onClick="selectSkin"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/skin4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="selectSkin"
+            android:background="#B4764E"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/skin5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="selectSkin"
+            android:background="#A05E2C"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/skin6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="selectSkin"
+            android:background="#533A38"
+            android:text="6" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/LatView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Latitude:" />
+
+    <TextView
+        android:id="@+id/LonView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Longitude:" />
+
+    <TextView
+        android:id="@+id/SkinView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="skin:" />
+
+    <TextView
+        android:id="@+id/uvView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/burnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time to burn:"
+        android:textSize="30sp"
+        tools:text="burnview" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/timerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="startTimer"
+            android:text="Start TImer" />
+
+        <Button
+            android:id="@+id/sunscreenButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sunscreen Applied" />
+    </LinearLayout>
+
+</LinearLayout>
